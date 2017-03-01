@@ -22,14 +22,15 @@
     margin:0 auto;
     width:80%;
     height:100%;
+    overflow:auto;
 }
 
 .title1 {
     text-align: center;
-    height:100%;
     font-family:"Courier New", Courier, monospace;
-    font-size:14vmin;
+    font-size:14vh;
     white-space: pre;
+    
     /*https://www.tutorialspoint.com/css/css_measurement_units.htm website describing different fonts*/
     /*To do: Responsive design*/
 }
