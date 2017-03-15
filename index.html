@@ -1,58 +1,115 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" href="LayoutCSS.css">
-    <title>CDB</title>
-  
+<title>Frank Gunsch Web Dev.</title>
+<link rel="stylesheet" href="CSSResume.css"> 
 </head>
-    <!-- Body main container -->
-<body class="ContainerZero">
-    <div class=" ContainerOne">
-        <!-- Main Title -->
-        <div class="ContainerTwoTitleHolder">
-            <div class="ContainerThreeTitle">
-                <header class="title1">CAT  DOG  BIRD</header>  <!-- Don't know how to make it responsive without changing to image, review!!-->
-            </div>
-        </div>
-        
-        <!-- Cat title before info section-->
-        <div class="AnimalCard">
-            <p >Cats </p>
-        </div>
-        
-        <!-- Cat Info section-->
-        <div class="AnimalInfo">
-            <p>
-                <a  href="https://en.wikipedia.org/wiki/Cat"><img class="AnimalPics" src="cat.png" alt="Noob."></a>
-            This isn't a cat.
-            </p>
-            <!-- Something that I noticed here is that when I put the paragraph before the image on the right,
-                 and typed so that the paragraph text reached the image, it pushes the image out of they way,
-                 but if I put it after the image, the text wraps around the image, Why is this? Is this part of some
-                 bigger propety I'm not aware of? Need to investigate further. -->
-        </div>
-        
-        <!-- Dog title before info section-->
-        <div class="AnimalCard">
-            <p >Dogs</p>
-        </div>
-        
-        <!-- Dog information-->
-        <div class="AnimalInfo">
-            <p>This isn't a dog. <a  href="https://en.wikipedia.org/wiki/Dog"><img class="AnimalPics" src="doge.png" alt="Noob."></a> </p>
-        </div>
-        
-          <!-- Bird title-->
-        <div class="AnimalCard">
-            <p >Birds</p>
-        </div>
-        
-         <!-- Bird Info-->
-        <div class="AnimalInfo">
-            <p>This isn't a bird.
-                <a  href="https://en.wikipedia.org/wiki/Bird"><img class="AnimalPics" src="bird.png" alt="Noob."></a></p>
-        </div>
-        
-    </div>
+
+  
     
+<body>
+  <canvas id="c"></canvas>
+  
+<div id="container">
+	<div class="header">
+		<p>
+           <a href="http://fontmeme.com/cursive-fonts/"><img src="Logo_resume_vIDK.png" alt="cursive-fonts" border="0"></a>
+		</p>
+	</div>
+<div class="sub-header">  
+    <h2  >Projects</h2>
+    
+	   <p>Clue Scroll Gen</p>
+	   <p>Matrix Forest</p>
+	   <p>Puzzle Game </p>
+</div>  
+
+    
+<div class="sub-header">
+    <h2 class="technologies-sub-header" >Technologies</h2>
+    <div class="technology-types">
+	   <p>HTML</p>
+	   <p>CSS</p>
+	   <p>JavaScript</p>
+	   <p>JQuery</p>
+	   <p>MySQL</p>
+	   <p>PHP</p> <!-- Make these clickable-->
+    </div>    
+ </div>   
+    
+<div class="sub-header">
+    <h2>About</h2>
+	   <p>Hello, my name is Frank.</p>
+</div>
+    
+<div class="sub-header">
+    <h2>Contact</h2>
+	   <p>gunschfl@acad.sunybroome.edu</p>
+</div>
+    </div>
+
+    
+    <!-- function to reload page on resize window.onresize = function(){ location.reload(); } -->
+     
+<script>
+    // getting canvas by id c
+var c = document.getElementById('c');
+var ctx = c.getContext("2d"); // DONT UNDERSTAND
+//making the canvas full screen
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+
+
+//Chinese Characters - taken from the unicode character set
+
+var matrix = "1 2 3⚠☤⚕⚚†☯⚖☮⚘⚔☭⚒⚓⚛⚜✠✙✞✟✧⋆★☆✪✫✬✭✮☫☬☸✵❂☘♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂❦✈♕♛♖♜☁ 4 5 6 7 8 9";
+matrix = matrix.split(""); // DONT UNDERSTAND x+y and canvas would help so you don't get those messed up
+var font_size = 20;
+var columns = c.width / font_size; // DONT UNDERSTAND
+
+var drops = [];
+for (var x = 0; x < columns; x++) // DONT UNDERSTAND
+{
+  drops[x] = 1; // sets every value in drops equal to one, this is the y-cord, position in array x-cord.
+}
+
+function draw() {  
+  ctx.fillStyle = "rgba(0,0,0,.2)"; // Last parameter changes the fade out time.
+  ctx.fillRect(1, 1, c.width, c.height); // DONT UNDERSTAND
+
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)]; // Good example of Javascript Coercion.
+    }
+    return color;
+  }
+ 
+  ctx.font = font_size + "px Courier New";
+
+  for (var i = 0; i < drops.length; i++) // set text value,
+  {
+  	ctx.fillStyle = getRandomColor();
+    var text = matrix[Math.floor(Math.random() * matrix.length)]; // Random value in the matrix array.
+    ctx.fillText(text, font_size * i, drops[i] * font_size); //goddamn it x
+
+    if (drops[i] * font_size > c.height) {
+      drops[i] = 0;
+
+    }
+    drops[i]++;
+    
+
+  }
+}
+
+setInterval(draw, 100); // think of these as ticks combined with changes inbetween
+
+     
+</script>       
+ 
 </body>
+
 </html>
