@@ -13,20 +13,19 @@
 <div id="container">
 	<div class="header">
 		<p>
-          <img src="Logo_resume_vIDK.png" alt="cursive-fonts" border="0"> <!-- Source: font meme -->
+          <img src="ResumeLogo.png" alt="cursive-fonts" border="0"> <!-- Source: fontmemes.com -->
 		</p>
 	</div>
 <div class="sub-header">  
-    <h2  >Projects</h2>
+    <h2 class="projects">Projects</h2>
     
 	   <p>Clue Scroll Gen</p>
 	   <p>Matrix Forest</p>
 	   <p>Puzzle Game </p>
 </div>  
-
     
 <div class="sub-header">
-    <h2 class="technologies-sub-header" >Technologies</h2>
+    <h2 class="technologies" >Technologies</h2>
     <div class="technology-types">
 	   <p>HTML</p>
 	   <p>CSS</p>
@@ -38,12 +37,12 @@
  </div>   
     
 <div class="sub-header">
-    <h2>About</h2>
+    <h2 class="about">About</h2>
 	   <p>Hello, my name is Frank.</p>
 </div>
     
 <div class="sub-header" >
-    <h2 id="contact">Contact</h2>
+    <h2 class="contact">Contact</h2>
 	   <p>555 - 555 - 5555</p>
        <p>me@website.com</p>
 </div>
@@ -52,14 +51,31 @@
     <!-------- END PAGE DISPLAY----------------------------------------------------------------->
     <!-- function to reload page on resize window.onresize = function(){ location.reload(); } -->
     <!--- add global variable to control matrix array through jquery onhover listener ---------->
-       
+ 
+<!-- Script changes to matrix rain background if you hover over subheaders -->
+    
 <script>
-$('#contact').mouseenter(function (){
-    matrix ="Contact ▲ ▲ ▲ ▲ ▲ ▲             ▲ ▲ ▲ ▲       ▲   ▲   ▲";
-    matrix = matrix.split("▲");
-   
+$('.contact,.about,.technologies,.projects').mouseenter(function (){
+     if ($(this).is(".contact")){ 
+        matrix ="Contact ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲";
+        matrix = matrix.split("▲");
+         
+     }else if($(this).is(".about")){
+        matrix ="About ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲";
+        matrix = matrix.split("▲");
+     }
+     else if($(this).is(".projects")){
+        matrix ="Project ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲";
+        matrix = matrix.split("▲");
+     }
+     else if($(this).is(".technologies")){
+        matrix ="technologies ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲";
+        matrix = matrix.split("▲");
+     }                                                   
+    
 }); 
-$('#contact').mouseleave(function (){
+    
+$('.contact, .about, .technologies, .projects').mouseleave(function (){
     matrix = "123⚠☤⚕⚚†☯⚖☮⚘⚔☭⚒⚓⚛⚜✠✙✞✟✧⋆★☆✪✫✬✭✮☫☬☸✵❂☘♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂❦✈♕♛♖♜☁456789"; 
     matrix = matrix.split("");
     
