@@ -4,30 +4,30 @@
 <head>
 <title>Frank Gunsch Web Dev.</title>
 <link rel="stylesheet" href="CSSResume.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<meta charset="utf-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
 </head>
 
-  
-    
 <body>
   <canvas id="c"></canvas>
   
 <div id="container">
 	<div class="header">
 		<p>
-           <a href="http://fontmeme.com/cursive-fonts/"><img src="Logo_resume_vIDK.png" alt="cursive-fonts" border="0"></a>
+          <img src="ResumeLogo.png" alt="cursive-fonts" border="0"> <!-- Source: fontmemes.com -->
 		</p>
 	</div>
 <div class="sub-header">  
-    <h2  >Projects</h2>
+    <h2 class="projects">Projects</h2>
     
 	   <p>Clue Scroll Gen</p>
 	   <p>Matrix Forest</p>
 	   <p>Puzzle Game </p>
 </div>  
-
     
 <div class="sub-header">
-    <h2 class="technologies-sub-header" >Technologies</h2>
+    <h2 class="technologies" >Technologies</h2>
     <div class="technology-types">
 	   <p>HTML</p>
 	   <p>CSS</p>
@@ -39,51 +39,82 @@
  </div>   
     
 <div class="sub-header">
-    <h2>About</h2>
+    <h2 class="about">About</h2>
 	   <p>Hello, my name is Frank.</p>
 </div>
     
-<div class="sub-header">
-    <h2>Contact</h2>
-	   <p>845 - 891 - 7204</p>
-       <p>gunschfl@acad.sunybroome.edu</p>
+<div class="sub-header" >
+    <h2 class="contact">Contact</h2>
+	   <p>555 - 555 - 5555</p>
+       <p>me@website.com</p>
 </div>
     </div>
 
     <!-------- END PAGE DISPLAY----------------------------------------------------------------->
     <!-- function to reload page on resize window.onresize = function(){ location.reload(); } -->
     <!--- add global variable to control matrix array through jquery onhover listener ---------->
+ 
+<!-- Script changes to matrix rain background if you hover over subheaders -->
+    
 <script>
-    // getting canvas by id c
+$('.contact,.about,.technologies,.projects').mouseenter(function (){
+     if ($(this).is(".contact")){ 
+        matrix ="Contact ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲";
+        matrix = matrix.split("▲");
+         
+     }else if($(this).is(".about")){
+        matrix ="About ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲";
+        matrix = matrix.split("▲");
+     }
+     else if($(this).is(".projects")){
+        matrix ="Project ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲";
+        matrix = matrix.split("▲");
+     }
+     else if($(this).is(".technologies")){
+        matrix ="technologies ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲  ▲";
+        matrix = matrix.split("▲");
+     }                                                   
+    
+}); 
+    
+$('.contact, .about, .technologies, .projects').mouseleave(function (){
+    matrix = "123⚠☤⚕⚚†☯⚖☮⚘⚔☭⚒⚓⚛⚜✠✙✞✟✧⋆★☆✪✫✬✭✮☫☬☸✵❂☘♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂❦✈♕♛♖♜☁456789"; 
+    matrix = matrix.split("");
+    
+});        
+</script>  
+    
+<script>
+    
+// getting canvas by id c
 var c = document.getElementById('c');
-var ctx = c.getContext("2d"); // DONT UNDERSTAND
+var ctx = c.getContext("2d");
+    
 //making the canvas full screen
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 
-//Chinese Characters - taken from the unicode character set
-
-var matrix = "1 2 3⚠☤⚕⚚†☯⚖☮⚘⚔☭⚒⚓⚛⚜✠✙✞✟✧⋆★☆✪✫✬✭✮☫☬☸✵❂☘♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂❦✈♕♛♖♜☁ 4 5 6 7 8 9";
-matrix = matrix.split(""); // DONT UNDERSTAND x+y and canvas would help so you don't get those messed up
-var font_size = 20;
-var columns = c.width / font_size; // DONT UNDERSTAND
-
+// Change this to random Unicode Array Generator by default. Change to change    
+var matrix = "123⚠☤⚕⚚†☯⚖☮⚘⚔☭⚒⚓⚛⚜✠✙✞✟✧⋆★☆✪✫✬✭✮☫☬☸✵❂☘♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂❦✈♕♛♖♜☁456789"; 
+matrix = matrix.split("");
+var font_size = 20;  
+var columns = c.width / font_size;
 var drops = [];
-for (var x = 0; x < columns; x++) // DONT UNDERSTAND
+for (var x = 0; x < columns; x++) 
 {
   drops[x] = 1; // sets every value in drops equal to one, this is the y-cord, position in array x-cord.
 }
 
 function draw() {  
-  ctx.fillStyle = "rgba(0,0,0,.2)"; // Last parameter changes the fade out time.
-  ctx.fillRect(1, 1, c.width, c.height); // DONT UNDERSTAND
+  ctx.fillStyle = "rgba(0,0,0,.2)"; 
+  ctx.fillRect(1, 1, c.width, c.height); 
 
   function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
     for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)]; // Good example of Javascript Coercion.
+      color += letters[Math.floor(Math.random() * 16)]; 
     }
     return color;
   }
@@ -94,7 +125,7 @@ function draw() {
   {
   	ctx.fillStyle = getRandomColor();
     var text = matrix[Math.floor(Math.random() * matrix.length)]; // Random value in the matrix array.
-    ctx.fillText(text, font_size * i, drops[i] * font_size); //goddamn it x
+    ctx.fillText(text, font_size * i, drops[i] * font_size); 
 
     if (drops[i] * font_size > c.height) {
       drops[i] = 0;
@@ -106,10 +137,10 @@ function draw() {
   }
 }
 
-setInterval(draw, 100); // think of these as ticks combined with changes inbetween
+setInterval(draw, 100); // Ticks inbetween each draw.
 
-     
-</script>       
+</script>
+    
  
 </body>
 
