@@ -5,51 +5,57 @@
 <title>Frank Gunsch Web Dev.</title>
 <link rel="stylesheet" href="CSSResume.css"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="ShowMyProjects.js"></script>
 <meta charset="utf-8">   
 <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 </head>
 
 <body>
-  <canvas id="c"></canvas>
-  
+
+<canvas id="c"></canvas>
+
 <div id="container">
+    
 	<div class="header">
 		<p>
           <img src="ResumeLogo.png" alt="cursive-fonts" border="0"> <!-- Source: fontmemes.com -->
 		</p>
 	</div>
-<div class="sub-header">  
-    <h2 class="projects">Projects</h2>
     
-	   <p>Clue Scroll Gen</p>
-	   <p>Matrix Forest</p>
-	   <p>Puzzle Game </p>
-</div>  
+    <div class="sub-header">  
+        <h2 class="projects">Projects</h2>
+        <div class ="project-names">
+	       <p>Clue Scroll Gen</p>
+	       <p>Matrix Forest</p>
+	       <p>Puzzle Game </p>
+        </div>    
+    </div>  
     
-<div class="sub-header">
-    <h2 class="technologies" >Technologies</h2>
-    <div class="technology-types">
-	   <p>HTML</p>
-	   <p>CSS</p>
-	   <p>JavaScript</p>
-	   <p>JQuery</p>
-	   <p>MySQL</p>
-	   <p>PHP</p> <!-- Make these clickable-->
-    </div>    
- </div>   
+    <div class="sub-header">
+        <h2 class="technologies" >Technologies</h2>
+        <div class="technology-types">
+	       <p>HTML</p>
+	       <p>CSS</p>
+	       <p>JavaScript</p>
+	       <p>JQuery</p>
+	       <p>MySQL</p>
+	       <p>PHP</p> <!-- Make these clickable-->
+        </div>    
+    </div>   
     
-<div class="sub-header">
-    <h2 class="about">About</h2>
-	   <p>Hello, my name is Frank.</p>
-</div>
+    <div class="sub-header">
+        <h2 class="about">About</h2>
+	    <p>Hello, my name is Frank.</p>
+    </div>
     
-<div class="sub-header" >
-    <h2 class="contact">Contact</h2>
+    <div class="sub-header" >
+       <h2 class="contact">Contact</h2>
 	   <p>555 - 555 - 5555</p>
        <p>me@website.com</p>
-</div>
     </div>
+</div>
 
+    
     <!-------- END PAGE DISPLAY----------------------------------------------------------------->
     <!-- function to reload page on resize window.onresize = function(){ location.reload(); } -->
     <!--- add global variable to control matrix array through jquery onhover listener ---------->
