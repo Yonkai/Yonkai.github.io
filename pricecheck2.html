@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<title>items</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+$(document).ready(function(){
+    $("#submitinfo").click(function(){
+	    var amountOfItems = parseInt(document.getElementById("amountOfItems").value);
+        var second_number = parseInt(document.getElementById("theItemID").value);
+		
+		$.getJSON( "https://api.rsbuddy.com/grandExchange?a=guidePrice&i=" + second_number, function( data ) {
+			var items = [];
+		    $.each( data, function( key, val ) {
+                items.push(key,val);			
+		});
+        console.log(items[1]);
+		
+		// Gets the price of bonds and converts to USD
+		$.getJSON( "https://api.rsbuddy.com/grandExchange?a=guidePrice&i=13190", function( moredata ) {
+			var priceOfBondHolder = [];
+		    $.each( moredata, function( key1, val1 ) {
+                priceOfBondHolder.push(key1,val1);			
+		});
+		
+		
+		document.getElementById("convertedValueGoesInThisBox").value = "USD: " + (amountOfItems * (items[1]*(6/priceOfBondHolder[1]))) ;
+});
+    });
+});
+});
+</script>
+</head>
+<body>
+<h2> Item to USD price converter:</h2>
+<form>
+  Number of items:<br>
+  <input type="number" id="amountOfItems" name="amount" size="50">
+  <br>
+  Item ID:<br>
+  <input type="number" name="itemID" id="theItemID" size="50">
+  <br>
+  Items cost in dollars:
+  <br>
+  <input type="text"  id="convertedValueGoesInThisBox" name="conversion" size="50">
+  <br><br>
+  <input id="submitinfo" type="button" name="clickbtn" value="Display Result">
+  
+</form>
+<p> To find the ID of an item look it up on the <a href="http://2007.runescape.wikia.com/wiki/2007scape_Wiki"> OSRS WIKI. </a> <br> <br>
+<img src="18.gif" alt="concaine bot."> 
+<div></div>
+</body>
+</html>
