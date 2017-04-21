@@ -32,3 +32,22 @@ img {
 }
 
 
+
+.textForSubheadingsHidden{
+    text-align:center;
+    
+   
+}
+
+.toggle
+{
+    display:none;
+}
+
+.innerText{
+    background-color:black;
+    color:white;
+    letter-spacing:6.4px;
+    font-size:20px;
+   
+}

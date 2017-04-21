@@ -5,5 +5,11 @@ $(document).ready(function(){
        $(".sub-header").eq(3).children().toggle();
        $(".project-names").children().toggle();
        $(".projects").text("Contact");
+       $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
+       // Multiline String using EC6 Backtics.
+         $(".innerText").html(` <p>
+            Contact Me.... TODO<br/><br/>
+           
+        </p>`);
     });
 });
