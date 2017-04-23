@@ -8,7 +8,7 @@ $(document).ready(function(){
        $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
        // Multiline String using EC6 Backtics.
          $(".innerText").html(` <p>
-            Contact Me.... TODO<br/><br/>
+           I'll probably answer my phone.
            
         </p>`);
     });
