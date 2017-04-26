@@ -1,0 +1,15 @@
+-Is recreating a website a good way to learn?
+
+-Put on GitHub and look at it on your phone.
+
+-Add a shadow to the big title. 
+
+-ChromeDev tools lets you see stuff on other devices! fuck yes.
+
+-Should I make the CSS/HTML layout first then "integrate" the server, from a design perspective?
+
+
+
+
+
+<a href="http://fontmeme.com/signature-fonts/"><img src="http://fontmeme.com/permalink/170314/f0e537825287a291d2df79220ba35bce.png" alt="signature-fonts" border="0"></a>

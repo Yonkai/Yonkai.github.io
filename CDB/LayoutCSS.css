@@ -1,0 +1,95 @@
+
+.ContainerOne {
+    height:100%;
+    max-width:80%;
+    margin: 0 auto;
+    background-color:#111012;  
+}
+
+.ContainerZero {
+    margin:0px;
+    background-color:#2A272B;
+}
+
+.ContainerTwoTitleHolder {
+    width:100%;
+    /* height:15%; */
+    background-color:#CFCFCF;
+    border:none;
+}
+
+.ContainerThreeTitle {
+    margin:0 auto;
+    width:80%;
+    height:100%;
+    
+}
+
+.title1 {
+    text-align: center;
+    font-family:"Courier New", Courier, monospace;
+    font-size:4.5vw;
+    text-shadow: 4px 4px 10.4px black;
+    white-space: pre;
+    
+    /* Looks different on iphone because of how it's an upright rectangle shape, could have like
+        a system that detects the viewport type, but it's passable */
+    
+    /*https://www.tutorialspoint.com/css/css_measurement_units.htm website describing different fonts*/
+    /*To do: Responsive design*/
+}
+
+.AnimalCard {
+    float:left;
+    width:100%;
+    height:5%;
+    background-color:#808080;
+    display:block;
+    padding-bottom: 2vmin;
+}
+
+.AnimalCard p  {
+    display:inline;
+    font-size:5vmin;
+    font-family:"Courier New", Courier, monospace;
+    padding-left: 2vmin;
+   
+}
+
+
+.AnimalInfo {
+    width:100%;
+    height:50%;
+    background-color: black;
+}
+
+.AnimalInfo p {
+    color:red;
+    font-family:"Courier New", Courier, monospace;
+    font-size: 4vmin;
+}
+
+
+
+/* Notes to self...*/
+
+/* Flexbox to make it auto-respond like the text/title? Go over responsive design on w3Schools/Mozzila..*/
+
+/* Learn what all the weird stuff in the header means on the source for other sites */
+
+/* learn more about best practices for organization, it really helps imo*/
+
+/* Not feeling constantly disorganzied with all the screens I have up*/
+
+/* Addable content/modifications: User Sign up, A multiple page setup where you click on a link and go to an info section
+   for each animal, responsivness, panel view through, professional graphics, other sections/designs
+    proper-ass working gitHub with master and working model branches. Way to take better notes to reference
+    for the future. General JavaScript/JQuery Stuff. How to open links in different window/tab, etc.
+	How to make big title collapse, too.
+*/
+
+
+.AnimalPics {
+    float:right;
+    padding-left: 20px;
+}
