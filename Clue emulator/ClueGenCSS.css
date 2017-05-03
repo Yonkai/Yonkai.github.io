@@ -1,0 +1,38 @@
+#test{
+    background-color:#fff39b;
+    width:500px;
+    height:400px;
+    margin:0 auto;
+    border-radius: 30px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.button{
+    margin:0 auto;
+    margin-top:5px;
+    text-align:center;
+    
+}
+
+@media only screen and (max-width: 500px) {
+     #test{
+    background-color:#fff39b;
+    width:100%;
+    height:300px;
+    margin:0 auto;
+    border-radius: 30px;
+}
+}
+
+.iteminfo{
+  margin-bottom:0px;   
+  margin-top:-100px;
+  text-align:center;
+  padding:0px;
+}
+
+.itemtext{
+  margin:0px;
+  
+}
