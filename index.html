@@ -17,10 +17,10 @@
 
   ga('create', 'UA-97398971-2', 'auto');
   ga('send', 'pageview');
-
 </script>
+	
 <meta charset="utf-8">   
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> Why does this break the site?? more research -->   
+	
 </head>
 
 <body>
@@ -38,8 +38,8 @@
     <div class="sub-header">  
         <h2 class="projects">Projects</h2>
         <div class ="project-names">
-	       <p>Converter-35</p>
-	       <p>CAT DOG BIRD</p>
+	       <p>Clue Scroll Emulator</p>
+	       <p>Cat Dog Bird</p>
         </div>    
     </div>
     
@@ -53,17 +53,17 @@
             Stack: HTML,CSS
             <br /><br/>
             
-            "Converter-35":<br/><br/>
-            Calculator that uses an API in order to calculator the price of an online video games items<br/>
+            "Clue Scroll Emulator":<br/><br/>
+            Emulator for an online video game that models in-game reward generation<br/>
             into real money.<br /><br/>
-            Stack: HTML, CSS, API, Vanilla JS
+            Stack: HTML, CSS, Vanilla JS, JQuery, Responsive Design
             <br /><br/>
             
              "This Website":<br/><br/>
             I use this website in order to host my portfolio and other stuff. You're using it right now. Hello there! <br/><br/>
             Stack: HTML, CSS, Vanilla JS, JQuery, Canvas
             <br /><br/>
-            <!-- Add pagination latter -->
+            <!-- Add pagination if needed. -->
             
          
         </p>
@@ -81,7 +81,9 @@
 	       <p>JQuery</p>
 	       <p>MySQL</p>
 	       <p>PHP</p>
-		<p>And more</p><!-- Make these clickable-->
+	       <p>Git</p>
+	       <p>Unit testing</p>
+	       <p>And more</p> 
         </div>    
     </div>   
     
@@ -97,13 +99,11 @@
     </div>
 </div>
 
-    
-    <!-------- END PAGE DISPLAY----------------------------------------------------------------->
     <!-- function to reload page on resize window.onresize = function(){ location.reload(); } -->
     <!--- add global variable to control matrix array through jquery onhover listener ---------->
  
-<!-- Script changes to matrix rain background if you hover over subheaders -->
-    
+<!-- This script changes the matrix esque. background if you hover over subheaders -->
+
 <script>
 $('.contact,.about,.technologies,.projects').mouseenter(function (){
      if ($(this).is(".contact")){ 
@@ -124,7 +124,7 @@ $('.contact,.about,.technologies,.projects').mouseenter(function (){
      }                                                   
     
 }); 
-    
+    // Resets matrix to default.
 $('.contact, .about, .technologies, .projects').mouseleave(function (){
     matrix = "123⚠☤⚕⚚†☯⚖☮⚘⚔☭⚒⚓⚛⚜✠✙✞✟✧⋆★☆✪✫✬✭✮☫☬☸✵❂☘♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂❦✈♕♛♖♜☁456789"; 
     matrix = matrix.split("");
@@ -138,12 +138,12 @@ $('.contact, .about, .technologies, .projects').mouseleave(function (){
 var c = document.getElementById('c');
 var ctx = c.getContext("2d");
     
-//making the canvas full screen
+//Matches canvas to window size.
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 
-// Change this to random Unicode Array Generator by default. Change to change    
+// Character set.
 var matrix = "123⚠☤⚕⚚†☯⚖☮⚘⚔☭⚒⚓⚛⚜✠✙✞✟✧⋆★☆✪✫✬✭✮☫☬☸✵❂☘♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂❦✈♕♛♖♜☁456789"; 
 matrix = matrix.split("");
 var font_size = 20;  
@@ -169,10 +169,12 @@ function draw() {
  
   ctx.font = font_size + "px Courier New";
 
-  for (var i = 0; i < drops.length; i++) // set text value,
+  for (var i = 0; i < drops.length; i++) 
   {
-  	ctx.fillStyle = getRandomColor();
-    var text = matrix[Math.floor(Math.random() * matrix.length)]; // Random value in the matrix array.
+    ctx.fillStyle = getRandomColor();
+    var text = matrix[Math.floor(Math.random() * matrix.length)]; 
+	  
+    // Random value in the matrix array.
     ctx.fillText(text, font_size * i, drops[i] * font_size); 
 
     if (drops[i] * font_size > c.height) {
@@ -185,7 +187,7 @@ function draw() {
   }
 }
 
-setInterval(draw, 100); // Ticks inbetween each draw.
+setInterval(draw, 250); // 'Tick' every 1/4th second.
 
 </script>
     
