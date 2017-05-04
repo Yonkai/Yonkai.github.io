@@ -8,22 +8,23 @@ $(document).ready(function(){
        $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
         // Multiline String using EC6 Backtics.
          $(".innerText").html(` <p>
-            "Cat, Dog, Bird":<br/><br/>
+            <a href="yonkai.github.io/Clue emulator">"Cat, Dog, Bird":</a><br/><br/>
             This is a basic website using HTML and CSS that implements the basic principles of responsive<br/>
             design.<br /><br/>
             Stack: HTML,CSS
             <br /><br/>
             
-            "Converter-35":<br/><br/>
-            Calculator that uses an API in order to calculator the price of an online video games items<br/>
+	        <a href="yonkai.github.io/Clue emulator">"Clue Scroll Emulator":</a><br/><br/>
+            Emulator for an online video game that models in-game reward generation<br/>
             into real money.<br /><br/>
-            Stack: HTML, CSS, API, Vanilla JS
+            Stack: HTML, CSS, Vanilla JS, JQuery, Responsive Design
             <br /><br/>
             
-             "This Website":<br/><br/>
+            "This Website":<br/><br/>
             I use this website in order to host my portfolio and other stuff. You're using it right now. Hello there! <br/><br/>
             Stack: HTML, CSS, Vanilla JS, JQuery, Canvas
             <br /><br/>
+
             <!-- Add pagination latter -->
             
          
@@ -33,7 +34,6 @@ $(document).ready(function(){
     });
 });
 
-// Removes everything below the Projects Title and (TODO) adds a diver below proje
 
-
-// 
+// TODO:
+// Make hyperlinks more readable.
