@@ -17,7 +17,7 @@ canvas {
     left: 0;
 }
 h2 {
-    font-size: 2em;
+    font-size: 35px;
     letter-spacing: 10px;
 }
 img {
@@ -25,29 +25,24 @@ img {
     -ms-transform: scale(1.3, 1.3);
     -webkit-transform: scale(1.3, 1.3);
 }
-
-.about,.contact,.projects
-{
+.about,
+.contact,
+.projects {
     text-decoration: underline;
 }
-
-
-
-.textForSubheadingsHidden{
-    text-align:center;
-    
-   
+.textForSubheadingsHidden {
+    text-align: center;
 }
-
-.toggle
-{
-    display:none;
+.toggle {
+    display: none;
 }
-
-.innerText{
-    background-color:black;
-    color:white;
-    letter-spacing:6.4px;
-    font-size:20px;
-   
+.innerText {
+    background-color: #222222;
+    color: white;
+    letter-spacing: 6.4px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+p {
+    font-size: 22px;
 }
