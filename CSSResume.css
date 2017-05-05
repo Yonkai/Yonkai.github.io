@@ -46,3 +46,28 @@ img {
 p {
     font-size: 22px;
 }
+
+/* Change to custom eventually */
+/* unvisited link */
+a:link {
+    color: rgb(161, 232, 160);
+}
+
+/* visited link */
+a:visited {
+    color: #ace4bb;
+}
+
+/* mouse over link */
+a:hover {
+    color: #2ba63a;
+}
+
+/* selected link */
+a:active {
+    color: rgb(41, 163, 39);
+}
+
+h2:hover{
+ cursor:pointer; 
+}
