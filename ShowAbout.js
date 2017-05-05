@@ -7,7 +7,7 @@ $(document).ready(function(){
        $(".projects").text("About");
           $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
       // Multiline String using EC6 Backtics.
-         $(".innerText").html(` <p>
+         $(".innerText").html(` <p class="aboutme">
     Hey! I'm Frank, I have recently fell in love <br>
 with programming and web development in particular. I <br> 
 have been learning and applying it seriously for <br> 
