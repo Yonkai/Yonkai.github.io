@@ -9,15 +9,15 @@ $(document).ready(function(){
         // Multiline String using EC6 Backtics.
          $(".innerText").html(` <p>
             <a href="/CDB">"Cat, Dog, Bird":</a><br/><br/>
-            This is a basic website using HTML and CSS that implements the basic principles of responsive<br/>
+            Simple information website using HTML and CSS that implements some basic principles of responsive<br/>
             design.<br /><br/>
-            Stack: HTML,CSS
+            Stack: HTML,CSS, Responsive Design
             <br /><br/>
             
 	        <a href="/Clue emulator">"Clue Scroll Emulator":</a><br/><br/>
-            Emulator for an online video game that models in-game reward generation<br/>
-            into real money.<br /><br/>
-            Stack: HTML, CSS, Vanilla JS, JQuery, Responsive Design
+            Emulator for an online video game that models in-game reward generation, a process that usually<br/>
+            takes 5-10 minutes in-game, but thousands can be done accurately here. <br /><br/>
+            Stack: HTML, CSS, Vanilla JS, JQuery, Responsive Design,
             <br /><br/>
             
             "This Website":<br/><br/>
