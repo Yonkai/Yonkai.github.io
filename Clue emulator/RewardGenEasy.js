@@ -280,7 +280,7 @@ function PlaceRewards() {
         }
         
         else{
-            console.log('Something fucked up');
+            console.log('Error');
         }
         
       
