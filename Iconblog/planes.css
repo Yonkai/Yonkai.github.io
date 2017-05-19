@@ -1,0 +1,173 @@
+.Layer0Body{
+  background-color:#cccccc;
+  margin:0;
+}
+
+.Layer1Header{
+  width:100%;
+  margin:0 auto;
+  background-color: white;
+  display:block;
+}
+
+.Layer2Header_Logo {
+  margin:10px 10px 20px 40px;
+  padding-right:40%;
+  padding-top:5px;
+  padding-bottom:5px;
+  display:inline-block;
+  
+}
+
+.Layer2Header_Filler{
+  display:inline-block;
+  }
+
+.Layer3Header_Searchbar{
+  position:absolute;
+  top:0px;
+  right:0px;
+  margin:4px;
+  border-radius:2rem;
+  width:150px;
+  height:50px;
+  background-color: #f1f1f1;
+}
+
+.Layer1_Navbar{
+  display:block;
+  width:100%;
+  margin:0 auto;
+  background-color: #eaeaea;
+   
+}
+.Layer1_Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+
+}
+
+.Layer1_Navbar ul li a {
+   font-size:2rem;
+   text-decoration:none;
+   justify-content:center;
+    
+}
+
+.Layer1_Navbar li {
+    display: inline;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+.Layer2_Sidebar{
+  margin-top:1.4rem;
+  min-width:20%;
+  background-color: #f9f9f9;
+  display:inline;
+  float:left;
+  border-radius:2rem;
+}
+
+
+.Layer2_InfoText1{
+  background-color: white;
+  display:inline-block;
+  border-radius:2rem;
+  margin-top:15px;
+  border: 0.4rem solid black;
+}
+
+.Layer1_Navbar li a:hover {
+    background-color: #adbfbf;
+    color: white;
+}
+
+.Layer2_InfoText1 h1 {
+  margin:1.3rem;
+    
+}
+
+.Layer2_InfoText1 p {
+ margin:1rem;
+ font-size: 2rem;
+  line-height: 3.5rem;
+
+}
+.dsaddadds p{
+  padding:10px;
+}
+
+.dsaddadds{
+  position:absolute;
+  display:inline-block;
+}
+
+.infoholder{
+  float:right;
+  display:inline;
+  position:absolute;
+  margin:10px;
+}
+
+.Layer2_Sidebar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Layer2_Sidebar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.Layer2_Sidebar li a:hover {
+    background-color: #adbfbf;
+    color: white;
+}
+
+/* Heading and body text styling rules */
+.BodyFont{
+  font-family: 'Lato', sans-serif;
+  line-height:1.5rem;
+}
+
+.HeadingFont{
+    font-family: 'Shrikhand';
+    font-kerning:none;
+    color:rgba(0,0,0,0.7);
+
+}
+
+
+
+/* Why does position:absolute; work for making the textboxes the correct way? Is this an okay way of doing things? */
+
+
+/* Plans (Maybe, if it works, try atleast.) */
+
+/* Better head tags -> "2017 Head Tag" */
+/* Organize CSS Gestaltly and Clean Codely, turn this into a habit not an afterthough */
+/* Pagination on the bottom */
+/* Dropdowns on Navbar */
+/* Stylize sidebar in an appealing way */
+/* To make responsive remove navbar, replace with slideout, and adjust font parameters */
+/* Review and compare things in your "I want to learn this" and "Design Inspiration" Bookmarks i.e. Responsive */
+/* Apply/Review Fitts's Law */
+/* Apply/Review Getstalts Laws */
+/* Apply/Review Apple Design guidelines for mobile */
+/* Apply Material.io guidelines for motion... Others */
+/* Add searchbar with API */
+/* Make highlighted corners go under border-radius box for navbar. */
+/* Turn Sidebar into accordion */
+/* Typical blog stuff i.e. comments, video/picture adability for text boxes */
+/* Stress test textboxes */
+/* AJAX Responsive for other pages (Only reload textboxes)*/
+/* Letting people comment on blog */
+/* HTML5 Semanticanize/Other HTML% stuff */
+
