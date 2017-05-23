@@ -14,9 +14,9 @@ $(document).ready(function(){
             Stack: HTML,CSS, Google Fonts, Font Awesome
             <br /><br/>
             
-	    	<a href="/Clue emulator"  target="_blank">"Clue Scroll Emulator":</a><br/><br/>
-            Emulator for an online video game that models in-game reward generation<br/>
-            into real money.<br /><br/>
+           	<a href="/Clue emulator"  target="_blank">"Clue Scroll Emulator":</a><br/><br/>
+            Emulator for an online video game that models in-game reward generation from reverse engineered<br/>
+            drop tables.<br /><br/>
             Stack: HTML, CSS, Vanilla JS, JQuery, Responsive Design
             <br /><br/>
             
