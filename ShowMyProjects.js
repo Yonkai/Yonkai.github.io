@@ -8,13 +8,13 @@ $(document).ready(function(){
        $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
         // Multiline String using EC6 Backtics.
          $(".innerText").html(` <p>
-			<a href="yonkai.github.io/Iconblog" target="_blank">"Icon_Blog":</a><br/><br/>
+			<a href="/Iconblog" target="_blank">"Icon_Blog":</a><br/><br/>
             This is a basic mircro-blog website with an easily interchangeable template and simplisitic <br/>
              design.<br /><br/>
             Stack: HTML,CSS, Google Fonts, Font Awesome
             <br /><br/>
             
-	    	<a href="yonkai.github.io/Clue emulator"  target="_blank">"Clue Scroll Emulator":</a><br/><br/>
+	    	<a href="/Clue emulator"  target="_blank">"Clue Scroll Emulator":</a><br/><br/>
             Emulator for an online video game that models in-game reward generation<br/>
             into real money.<br /><br/>
             Stack: HTML, CSS, Vanilla JS, JQuery, Responsive Design
