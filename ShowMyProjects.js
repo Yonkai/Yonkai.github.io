@@ -8,27 +8,25 @@ $(document).ready(function(){
        $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
         // Multiline String using EC6 Backtics.
          $(".innerText").html(` <p>
-            <a href="/CDB" target="_blank">"Cat, Dog, Bird":</a><br/><br/>
-            Simple information website using HTML and CSS that implements some basic principles of responsive<br/>
-            design.<br /><br/>
-            Stack: HTML,CSS, Responsive Design
+			<a href="yonkai.github.io/Iconblog" target="_blank">"Icon_Blog":</a><br/><br/>
+            This is a basic mircro-blog website with an easily interchangeable template and simplisitic <br/>
+             design.<br /><br/>
+            Stack: HTML,CSS, Google Fonts, Font Awesome
             <br /><br/>
             
-	        <a href="/Clue emulator" target="_blank">"Clue Scroll Emulator":</a><br/><br/>
-            Emulator for an online video game that models in-game reward generation, a process that usually<br/>
-            takes 5-10 minutes in-game, but thousands can be done accurately here. <br /><br/>
-            Stack: HTML, CSS, Vanilla JS, JQuery, Responsive Design,
+	    	<a href="yonkai.github.io/Clue emulator"  target="_blank">"Clue Scroll Emulator":</a><br/><br/>
+            Emulator for an online video game that models in-game reward generation<br/>
+            into real money.<br /><br/>
+            Stack: HTML, CSS, Vanilla JS, JQuery, Responsive Design
             <br /><br/>
             
             "This Website":<br/><br/>
             I use this website in order to host my portfolio and other stuff. You're using it right now. Hello there! <br/><br/>
             Stack: HTML, CSS, Vanilla JS, JQuery, Canvas
             <br /><br/>
-
-            <!-- Add pagination latter -->
-            
-         
-        </p>`);
+            <!-- Add pagination if needed. -->
+      
+       		</p>`);
           
         
     });
