@@ -9,7 +9,7 @@ $(document).ready(function(){
         // Multiline String using EC6 Backtics.
          $(".innerText").html(` <p>
 			<a href="/Iconblog" target="_blank">"Icon_Blog":</a><br/><br/>
-            This is a basic mircro-blog website with an easily interchangeable template and simplisitic <br/>
+            This is a basic micro-blog website with an easily interchangeable template and simplisitic <br/>
              design.<br /><br/>
             Stack: HTML,CSS, Google Fonts, Font Awesome
             <br /><br/>
