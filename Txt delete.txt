@@ -1,2 +1,0 @@
--Add responsive design for phones, review w3schools.
---.-.-.
