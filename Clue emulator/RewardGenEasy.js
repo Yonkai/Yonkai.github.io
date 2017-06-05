@@ -131,7 +131,6 @@ var MappedRewards = {
     Reward114Uncommon:new RewardXRarityLevel(114,"Black_Kiteshield_T",true,false,false,true,3,'EasyRewards/Black_kiteshield_(t).png',404),
     Reward115Uncommon:new RewardXRarityLevel(115,"Black_Platelegs_T",true,false,false,true,3,'EasyRewards/Black_platelegs_(t).png',404),
     Reward116Uncommon:new RewardXRarityLevel(116,"Black_Skirt_T",true,false,false,false,3,'EasyRewards/Black_skirt_(t).png',404),
-    // add skirts
     
     // Begin Commmon Rewards
     Reward0Common:new RewardXRarityLevel(0,"CoinsLow",false,[50,1500],false,false,2, 'EasyRewards/Coins.gif',404),
@@ -169,10 +168,9 @@ var MappedRewards = {
     Reward32Common:new RewardXRarityLevel(32,"Black_dagger",true,false,false,false,2,'EasyRewards/Black_dagger.png',404),
     Reward33Common:new RewardXRarityLevel(33,"Black_Long_Sword",true,false,false,false,2,'EasyRewards/Black_longsword.png',404),
     Reward34Common:new RewardXRarityLevel(34,"Black_Battleaxe",true,false,false,false,2,'EasyRewards/Black_battleaxe.png',404),
-    // Hope I done.
 };
 
-// Function generates the reward count, rarity, position and ID and returns value in an array.
+//Function generates the reward count, rarity, position and ID and returns value in an array.
 //TODO: After mapping rewards recalculate this, fix magic numbers.
 //Note-to-Self: With below function changing the " to ' made the function work in PlaceRewards wtf lol research this.
 function GenerateRewardsEasy() {
@@ -195,7 +193,7 @@ function GenerateRewardsEasy() {
 
 
 // Parses the reward map and turns them into rewards on screen based on constructor values.
-// This function is dependent on the GenerateRewardsEasy() function. See StackOVerflow for thing.
+// This function is dependent on the GenerateRewardsEasy() function.
 function PlaceRewards() {
     
     // Resets the image before each function call here. Remove->Place->Remove->Place etc.
@@ -272,8 +270,6 @@ function PlaceRewards() {
             
             console.log(RangeAmountRangeOnly);
             
-            
-            
              $("#itemtext" + i).text(Current.rewardName+ " " + RangeAmountRangeOnly + " count");
              $(RewardPosition).attr("src",Current.imageSrc);   
              $(RewardPosition).attr("alt",Current.rewardName);
@@ -283,11 +279,7 @@ function PlaceRewards() {
             console.log('Error');
         }
         
-      
-        
     }
-    //typical reward, if MA+R, if R, if MA See blue inked sheet.
     console.log(RewardObjects);
     
 }
-
