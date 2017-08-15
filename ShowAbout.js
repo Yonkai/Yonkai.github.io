@@ -9,10 +9,8 @@ $(document).ready(function(){
       // Multiline String using EC6 Backtics.
          $(".innerText").html(` <p class="aboutme">
     Hey! I'm Frank, I have recently fell in love <br>
-with programming and web development in particular. I <br> 
-have been learning and applying it seriously for <br> 
-about 7 months now. I am currently studying Computer Science<br> 
-set to graduate within a year with an associates.<br>
+with all things Web. Dev. and have been learning it for about 9 months <br> 
+I am currently going for an associates in C.S.<br> 
         </p>`);
     });
 });
