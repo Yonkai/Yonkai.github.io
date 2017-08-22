@@ -33,9 +33,6 @@
 }
 
 .Layer1_Navbar{
-  display:block;
-  width:100%;
-  margin:0 auto;
   background-color: #eaeaea;
    
 }
@@ -91,73 +88,18 @@
   line-height: 3.5rem;
 }
 
-
-
 .infoholder{
-  float:right;
-  display:inline;
-  width:85%;
   margin:10px;
 }
 
-.Layer2_Sidebar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.Layer2_Sidebar li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.Layer2_Sidebar li a:hover {
-    background-color: #adbfbf;
-    color: white;
-}
-
-/* Make the first and last items on the sidebar have rounded corners when highlighted*/
-body > div.Layer2_Sidebar > ul > li:nth-child(1) > a{
-  -webkit-border-radius: 2rem 2rem 0px 0px;
-}
-
-body > div.Layer2_Sidebar > ul > li:nth-child(5) > a{
-  -webkit-border-radius: 0px 0px 2rem 2rem;
-}
-
-/* Heading and body text styling rules */
 .BodyFont{
   font-family: 'Lato', sans-serif;
   line-height:1.5rem;
-  word-break:break-word;
 }
 
 .HeadingFont{
     font-family: 'Shrikhand';
     font-kerning:none;
+  /*Blending*/
     color:rgba(0,0,0,0.7);
 }
-
-
-/* Why does position:absolute; work for making the textboxes the correct way? Is this an okay way of doing things? */
-
-
-/* Plans (Maybe, if it works, try atleast.) */
-
-/* Better head tags -> "2017 Head Tag" */
-/* Organize CSS Gestaltly and Clean Codely, turn this into a habit not an afterthough */
-/* Pagination on the bottom */
-/* Dropdowns on Navbar */
-/* To make responsive remove navbar, replace with slideout, and adjust font parameters */
-/* Review and compare things in your "I want to learn this" and "Design Inspiration" Bookmarks i.e. Responsive */
-/* Apply/Review Fitts's Law */
-/* Apply/Review Getstalts Laws */
-/* Check Apple Design guidelines for mobile */
-/* Add searchbar with API */
-/* Typical blog stuff i.e. comments, video/picture adability for text boxes */
-/* Stress test textboxes */
-/* AJAX Responsive for other pages (Only reload textboxes)*/
-/* HTML5 Semanticanize/Other HTML5 stuff */
-
