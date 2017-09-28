@@ -6,7 +6,7 @@ $(document).ready(function(){
        $(".project-names").children().toggle();
        $(".projects").text("Contact");
        $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
-       // Multiline String using EC6 Backtics.
+       // Multiline String using ES6 Backtics.
          $(".innerText").html(` <p>
            I'll probably answer my phone.<br>
            
