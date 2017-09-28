@@ -1,8 +1,12 @@
-$(document).ready(function(){
-    $(".projects").click(function(){
+function toggleSubHeaders(){
        $(".sub-header").eq(1).children().toggle();
        $(".sub-header").eq(2).children().toggle();
        $(".sub-header").eq(3).children().toggle();
+};
+
+$(document).ready(function(){
+    $(".projects").click(function(){
+       toggleSubHeaders();
        $(".project-names").children().toggle();
        $(".projects").text("Projects");
        $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");

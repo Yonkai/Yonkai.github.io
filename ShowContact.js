@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".contact").click(function(){
-
+       toggleSubHeaders();
        $(".project-names").children().toggle();
        $(".projects").text("Contact");
        $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
