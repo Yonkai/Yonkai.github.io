@@ -6,7 +6,7 @@ $(document).ready(function(){
        $(".project-names").children().toggle();
        $(".projects").text("Projects");
        $(".toggle, .textForSubheadingsHidden").toggleClass("toggle textForSubheadingsHidden");
-        // Multiline String using EC6 Backtics.
+        // Multiline String using ES6 Backtics.
          $(".innerText").html(` <p>
 			<a href="/Iconblog" target="_blank">"Icon_Blog":</a><br/><br/>
             This is a basic micro-blog website with an easily interchangeable template and simplisitic <br/>
