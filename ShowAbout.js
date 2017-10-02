@@ -12,4 +12,4 @@ I am currently going for an associates in C.S.<br>
         </p>`);
     });
 });
-// Self-note: format in same way as showProjects.
+
